@@ -3,8 +3,19 @@ import { schedulerConfig } from './SchedulerConfig';
 import './App.scss';
 
 function App() {
+
+    const onEventDrag = (value) => {
+      // Performing custom operation
+      console.log("Event Dragged", value);
+    }
+
+    const eventDoubleClick = (value) => {
+      // Performing custom operation
+      console.log("Event Double Clicked", value);
+    }
+
     return (
-        <BryntumScheduler {...schedulerConfig} />
+        <BryntumScheduler {...schedulerConfig} onEventDrag={onEventDrag} onEventDblClick={eventDoubleClick} eventDragCreateFeature={false} />
     );
 }
 

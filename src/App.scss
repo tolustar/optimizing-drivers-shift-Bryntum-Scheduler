@@ -18,5 +18,24 @@ html {
 #container {
     flex    : 1 1 100%;
     display : flex;
+    flex-direction: column;
+  }
+
+h2{
+  font-size: 30px;
+  padding: 0 20px
 }
+
+
+.row{
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+
+.scheduler{
+  height: 100vh;
+}
+
+
 
